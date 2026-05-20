@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Copa News Brasil 2026 - Tudo sobre a Seleção Brasileira na Copa do Mundo 2026" />
+  <title>Copa News Brasil 2026 | A Voz do Futebol Brasileiro</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Google Fonts: Bebas Neue (display) + Barlow (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,400&family=Barlow+Condensed:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER / NAVBAR
+  ============================================================ -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+
+      <!-- Logo -->
+      <a href="#" class="navbar__logo">
+        <span class="logo-icon">&#9917;</span>
+        <span class="logo-text">Copa<strong>News</strong><em>Brasil</em></span>
+        <span class="logo-year">2026</span>
+      </a>
+
+      <!-- Nav links (desktop) -->
+      <nav class="navbar__nav" id="mainNav">
+        <ul>
+          <li><a href="#noticias" class="nav-link active">Brasil</a></li>
+          <li><a href="#jogos" class="nav-link">Copa 2026</a></li>
+          <li><a href="#jogos" class="nav-link">Jogos</a></li>
+          <li><a href="#selecoes" class="nav-link">Seleções</a></li>
+          <li><a href="#classificacao" class="nav-link">Tabela</a></li>
+          <li><a href="#artilheiros" class="nav-link">Artilheiros</a></li>
+          <li><a href="#videos" class="nav-link">Vídeos</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right actions -->
+      <div class="navbar__actions">
+        <div class="search-box" id="searchBox">
+          <input type="text" placeholder="Buscar notícias..." class="search-input" id="searchInput" />
+          <button class="search-btn" id="searchToggle" aria-label="Buscar">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+        </div>
+        <button class="btn-login">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Entrar
+        </button>
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Breaking news ticker -->
+    <div class="ticker-wrap">
+      <span class="ticker-label">AO VIVO</span>
+      <div class="ticker-track" id="tickerTrack">
+        <span>🏆 Copa do Mundo 2026 começa em junho nos EUA, México e Canadá</span>
+        <span>⚽ Dorival Júnior define lista final de 26 jogadores</span>
+        <span>🌟 Vinicius Jr. eleito melhor jogador da última Champions</span>
+        <span>🩵💛 Brasil no Grupo D ao lado de Argentina, França e Marrocos</span>
+        <span>📅 Estreia do Brasil: 14 de junho contra a Argentina em Nova York</span>
+        <span>🔥 Endrick marca dois gols pelo Real Madrid neste final de semana</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile nav overlay -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav__close" id="mobileNavClose">✕</button>
+    <ul>
+      <li><a href="#noticias">Brasil</a></li>
+      <li><a href="#jogos">Copa 2026</a></li>
+      <li><a href="#jogos">Jogos</a></li>
+      <li><a href="#selecoes">Seleções</a></li>
+      <li><a href="#classificacao">Tabela</a></li>
+      <li><a href="#artilheiros">Artilheiros</a></li>
+      <li><a href="#videos">Vídeos</a></li>
+    </ul>
+  </div>
+  <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+
+  <!-- ============================================================
+       HERO SECTION — SUPER MANCHETE: NEYMAR CONVOCADO
+  ============================================================ -->
+  <section class="hero" id="hero">
+    <!-- Parallax background -->
+    <div class="hero__bg" id="heroBg">
+      <!-- SVG ilustração estilizada de jogador de futebol -->
+      <div class="hero__player-silhouette"></div>
+      <!-- Elementos decorativos -->
+      <div class="hero__deco hero__deco--1"></div>
+      <div class="hero__deco hero__deco--2"></div>
+      <div class="hero__deco hero__deco--3"></div>
+      <div class="hero__deco hero__deco--hexagons"></div>
+    </div>
+    <!-- Overlay cinematográfico -->
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content">
+      <!-- Badge -->
+      <div class="hero__badge reveal-up">
+        <span class="badge-dot"></span>
+        BREAKING NEWS &nbsp;·&nbsp; SELEÇÃO BRASILEIRA
+      </div>
+
+      <!-- Manchete principal -->
+      <h1 class="hero__title reveal-up delay-1">
+        NEYMAR É<br/>
+        <span class="hero__title--highlight">CONVOCADO</span><br/>
+        PARA A COPA<br/>
+        DO MUNDO 2026
+      </h1>
+
+      <!-- Subtítulo -->
+      <p class="hero__subtitle reveal-up delay-2">
+        Craque brasileiro retorna à Seleção e disputará mais uma Copa defendendo o Brasil.
+        A confirmação veio direto do técnico Dorival Júnior em coletiva nesta terça-feira.
+      </p>
+
+      <!-- Meta info -->
+      <div class="hero__meta reveal-up delay-3">
+        <span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+          Há 12 minutos
+        </span>
+        <span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          84.2k visualizações
+        </span>
+        <span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          3.1k comentários
+        </span>
+      </div>
+
+      <!-- CTA -->
+      <div class="hero__actions reveal-up delay-4">
+        <a href="#" class="btn-hero-primary">
+          Ler Matéria Completa
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
+        </a>
+        <button class="btn-hero-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+          Compartilhar
+        </button>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero__scroll-hint">
+      <span>Role para baixo</span>
+      <div class="scroll-arrow"></div>
+    </div>
+
+    <!-- Jersey number decoration -->
+    <div class="hero__number">10</div>
+  </section>
+
+  <!-- ============================================================
+       MAIN CONTENT WRAPPER
+  ============================================================ -->
+  <main class="main-wrapper">
+
+    <!-- ============================================================
+         SECTION: NOTÍCIAS DA SELEÇÃO
+    ============================================================ -->
+    <section class="section" id="noticias">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-kicker">Seleção Canarinho</span>
+            <h2 class="section-title">Notícias do Brasil</h2>
+          </div>
+          <a href="#" class="see-all-link">Ver todas →</a>
+        </div>
+
+        <div class="content-grid">
+
+          <!-- Main column: news cards -->
+          <div class="news-grid">
+
+            <!-- Card destaque -->
+            <article class="news-card news-card--featured reveal-card">
+              <div class="news-card__img-wrap">
+                <div class="news-card__img nc-img--vinicius"></div>
+                <span class="news-card__category cat--selecao">Seleção</span>
+                <span class="news-card__live-badge">EM DESTAQUE</span>
+              </div>
+              <div class="news-card__body">
+                <h3 class="news-card__title">Vinícius Júnior lidera treinamento intenso e impressiona comissão técnica da Seleção</h3>
+                <p class="news-card__excerpt">O atacante do Real Madrid chegou dias antes ao CT da Seleção e demonstrou evolução física impressionante. Dorival elogiou a dedicação do craque.</p>
+                <div class="news-card__footer">
+                  <span class="news-card__time">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+                    Há 2 horas
+                  </span>
+                  <span class="news-card__read">5 min de leitura</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Cards normais - grid 2 colunas -->
+            <div class="news-sub-grid">
+
+              <article class="news-card reveal-card">
+                <div class="news-card__img-wrap news-card__img-wrap--sm">
+                  <div class="news-card__img nc-img--ancelotti"></div>
+                  <span class="news-card__category cat--tatica">Tática</span>
+                </div>
+                <div class="news-card__body">
+                  <h3 class="news-card__title">Ancelotti define possível time titular do Brasil para a estreia na Copa</h3>
+                  <p class="news-card__excerpt">Treinador italiano esboça o 4-3-3 com Vinícius e Neymar como pilares do ataque brasileiro.</p>
+                  <div class="news-card__footer">
+                    <span class="news-card__time">Há 3 horas</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="news-card reveal-card">
+                <div class="news-card__img-wrap news-card__img-wrap--sm">
+                  <div class="news-card__img nc-img--endrick"></div>
+                  <span class="news-card__category cat--jovem">Jovem Talento</span>
+                </div>
+                <div class="news-card__body">
+                  <h3 class="news-card__title">Endrick vira principal esperança ofensiva do Brasil na Copa do Mundo 2026</h3>
+                  <p class="news-card__excerpt">Com 18 anos, centroavante do Real Madrid surge como solução definitiva para a posição de 9 da Seleção.</p>
+                  <div class="news-card__footer">
+                    <span class="news-card__time">Há 4 horas</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="news-card reveal-card">
+                <div class="news-card__img-wrap news-card__img-wrap--sm">
+                  <div class="news-card__img nc-img--amistoso"></div>
+                  <span class="news-card__category cat--selecao">Seleção</span>
+                </div>
+                <div class="news-card__body">
+                  <h3 class="news-card__title">Brasil confirma amistoso final contra Portugal 10 dias antes da estreia na Copa</h3>
+                  <p class="news-card__excerpt">Jogo de preparação será realizado em Lisboa e servirá como último teste antes da competição.</p>
+                  <div class="news-card__footer">
+                    <span class="news-card__time">Há 5 horas</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="news-card reveal-card">
+                <div class="news-card__img-wrap news-card__img-wrap--sm">
+                  <div class="news-card__img nc-img--rodrygo"></div>
+                  <span class="news-card__category cat--tatica">Tática</span>
+                </div>
+                <div class="news-card__body">
+                  <h3 class="news-card__title">Rodrygo vira peça-chave e pode ser titular na Copa do Mundo pelo Brasil</h3>
+                  <p class="news-card__excerpt">Meio-atacante do Real Madrid convenceu a comissão técnica com atuações decisivas nos amistosos.</p>
+                  <div class="news-card__footer">
+                    <span class="news-card__time">Há 6 horas</span>
+                  </div>
+                </div>
+              </article>
+
+            </div><!-- /news-sub-grid -->
+
+            <!-- Linha extra de notícias -->
+            <div class="news-list">
+              <h3 class="news-list__title">Mais Notícias</h3>
+              <ul>
+                <li class="news-list__item reveal-card">
+                  <div class="news-list__img nc-img--raphinha"></div>
+                  <div class="news-list__body">
+                    <span class="news-list__cat cat--selecao">Seleção</span>
+                    <h4>Raphinha chega ao CT e participa do primeiro treino coletivo</h4>
+                    <span class="news-list__time">Há 7 horas</span>
+                  </div>
+                </li>
+                <li class="news-list__item reveal-card">
+                  <div class="news-list__img nc-img--alisson"></div>
+                  <div class="news-list__body">
+                    <span class="news-list__cat cat--copa">Copa 2026</span>
+                    <h4>Alisson Becker confirma boa forma e será o goleiro titular do Brasil</h4>
+                    <span class="news-list__time">Há 8 horas</span>
+                  </div>
+                </li>
+                <li class="news-list__item reveal-card">
+                  <div class="news-list__img nc-img--marquinhos"></div>
+                  <div class="news-list__body">
+                    <span class="news-list__cat cat--selecao">Seleção</span>
+                    <h4>Marquinhos será o capitão do Brasil na Copa do Mundo 2026</h4>
+                    <span class="news-list__time">Há 9 horas</span>
+                  </div>
+                </li>
+                <li class="news-list__item reveal-card">
+                  <div class="news-list__img nc-img--casemiro"></div>
+                  <div class="news-list__body">
+                    <span class="news-list__cat cat--tatica">Tática</span>
+                    <h4>Casemiro retorna à Seleção e reforça o meio-campo brasileiro</h4>
+                    <span class="news-list__time">Há 11 horas</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </div><!-- /news-grid (main column) -->
+
+          <!-- Sidebar -->
+          <aside class="sidebar">
+
+            <!-- Próximos jogos -->
+            <div class="sidebar-widget reveal-card">
+              <div class="widget-header">
+                <span class="widget-dot"></span>
+                <h3>Próximos Jogos</h3>
+              </div>
+              <ul class="fixture-list">
+                <li class="fixture-item">
+                  <div class="fixture-date">14 Jun</div>
+                  <div class="fixture-teams">
+                    <span class="flag">🇧🇷</span>
+                    <span class="team-name">Brasil</span>
+                    <span class="fixture-vs">VS</span>
+                    <span class="team-name">Argentina</span>
+                    <span class="flag">🇦🇷</span>
+                  </div>
+                  <div class="fixture-time">20:00</div>
+                  <span class="fixture-venue">Nova York</span>
+                </li>
+                <li class="fixture-item">
+                  <div class="fixture-date">18 Jun</div>
+                  <div class="fixture-teams">
+                    <span class="flag">🇧🇷</span>
+                    <span class="team-name">Brasil</span>
+                    <span class="fixture-vs">VS</span>
+                    <span class="team-name">França</span>
+                    <span class="flag">🇫🇷</span>
+                  </div>
+                  <div class="fixture-time">17:00</div>
+                  <span class="fixture-venue">Los Angeles</span>
+                </li>
+                <li class="fixture-item">
+                  <div class="fixture-date">23 Jun</div>
+                  <div class="fixture-teams">
+                    <span class="flag">🇧🇷</span>
+                    <span class="team-name">Brasil</span>
+                    <span class="fixture-vs">VS</span>
+                    <span class="team-name">Marrocos</span>
+                    <span class="flag">🇲🇦</span>
+                  </div>
+                  <div class="fixture-time">16:00</div>
+                  <span class="fixture-venue">Chicago</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Últimos resultados -->
+            <div class="sidebar-widget reveal-card">
+              <div class="widget-header">
+                <span class="widget-dot"></span>
+                <h3>Últimos Resultados</h3>
+              </div>
+              <ul class="results-list">
+                <li class="result-item result-win">
+                  <span class="result-comp">Amistoso</span>
+                  <div class="result-score">
+                    <span>🇧🇷 Brasil</span>
+                    <strong>3 – 0</strong>
+                    <span>México 🇲🇽</span>
+                  </div>
+                  <span class="result-date">05 Jun 2026</span>
+                </li>
+                <li class="result-item result-win">
+                  <span class="result-comp">Amistoso</span>
+                  <div class="result-score">
+                    <span>🇧🇷 Brasil</span>
+                    <strong>2 – 1</strong>
+                    <span>Inglaterra 🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>
+                  </div>
+                  <span class="result-date">29 Mai 2026</span>
+                </li>
+                <li class="result-item result-draw">
+                  <span class="result-comp">Amistoso</span>
+                  <div class="result-score">
+                    <span>🇧🇷 Brasil</span>
+                    <strong>1 – 1</strong>
+                    <span>Alemanha 🇩🇪</span>
+                  </div>
+                  <span class="result-date">21 Mai 2026</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Ranking FIFA -->
+            <div class="sidebar-widget reveal-card">
+              <div class="widget-header">
+                <span class="widget-dot"></span>
+                <h3>Ranking FIFA — Top 5</h3>
+              </div>
+              <ol class="ranking-list">
+                <li class="ranking-item ranking-item--highlight">
+                  <span class="rank-pos">1</span>
+                  <span class="rank-flag">🇧🇷</span>
+                  <span class="rank-name">Brasil</span>
+                  <span class="rank-pts">1864</span>
+                </li>
+                <li class="ranking-item">
+                  <span class="rank-pos">2</span>
+                  <span class="rank-flag">🇦🇷</span>
+                  <span class="rank-name">Argentina</span>
+                  <span class="rank-pts">1840</span>
+                </li>
+                <li class="ranking-item">
+                  <span class="rank-pos">3</span>
+                  <span class="rank-flag">🇫🇷</span>
+                  <span class="rank-name">França</span>
+                  <span class="rank-pts">1816</span>
+                </li>
+                <li class="ranking-item">
+                  <span class="rank-pos">4</span>
+                  <span class="rank-flag">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>
+                  <span class="rank-name">Inglaterra</span>
+                  <span class="rank-pts">1795</span>
+                </li>
+                <li class="ranking-item">
+                  <span class="rank-pos">5</span>
+                  <span class="rank-flag">🇧🇪</span>
+                  <span class="rank-name">Bélgica</span>
+                  <span class="rank-pts">1781</span>
+                </li>
+              </ol>
+            </div>
+
+            <!-- Jogadores em destaque -->
+            <div class="sidebar-widget reveal-card">
+              <div class="widget-header">
+                <span class="widget-dot"></span>
+                <h3>Jogadores em Destaque</h3>
+              </div>
+              <ul class="players-spotlight">
+                <li class="player-spot-item">
+                  <div class="player-spot-avatar psa--neymar">
+                    <span>10</span>
+                  </div>
+                  <div class="player-spot-info">
+                    <strong>Neymar Jr.</strong>
+                    <span>Atacante · PSG</span>
+                  </div>
+                  <div class="player-spot-stat">
+                    <span class="stat-value">12</span>
+                    <span class="stat-label">gols</span>
+                  </div>
+                </li>
+                <li class="player-spot-item">
+                  <div class="player-spot-avatar psa--vini">
+                    <span>7</span>
+                  </div>
+                  <div class="player-spot-info">
+                    <strong>Vinícius Jr.</strong>
+                    <span>Atacante · Real Madrid</span>
+                  </div>
+                  <div class="player-spot-stat">
+                    <span class="stat-value">9</span>
+                    <span class="stat-label">gols</span>
+                  </div>
+                </li>
+                <li class="player-spot-item">
+                  <div class="player-spot-avatar psa--endrick">
+                    <span>9</span>
+                  </div>
+                  <div class="player-spot-info">
+                    <strong>Endrick</strong>
+                    <span>Atacante · Real Madrid</span>
+                  </div>
+                  <div class="player-spot-stat">
+                    <span class="stat-value">7</span>
+                    <span class="stat-label">gols</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </aside><!-- /sidebar -->
+
+        </div><!-- /content-grid -->
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION: JOGOS / PLACARES
+    ============================================================ -->
+    <section class="section section--dark" id="jogos">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-kicker">Copa do Mundo FIFA 2026</span>
+            <h2 class="section-title">Jogos & Placares</h2>
+          </div>
+          <div class="stage-tabs">
+            <button class="stage-tab active">Fase de Grupos</button>
+            <button class="stage-tab">Oitavas</button>
+            <button class="stage-tab">Quartas</button>
+            <button class="stage-tab">Semi</button>
+            <button class="stage-tab">Final</button>
+          </div>
+        </div>
+
+        <div class="matches-grid">
+
+          <!-- Jogo ao vivo -->
+          <div class="match-card match-card--live reveal-card">
+            <div class="match-card__header">
+              <span class="match-status match-status--live">
+                <span class="live-dot"></span> AO VIVO — 67'
+              </span>
+              <span class="match-group">Grupo D</span>
+            </div>
+            <div class="match-card__score">
+              <div class="match-team">
+                <span class="match-flag">🇧🇷</span>
+                <span class="match-team-name">Brasil</span>
+              </div>
+              <div class="match-score-box">
+                <span class="score">2</span>
+                <span class="score-sep">:</span>
+                <span class="score">0</span>
+              </div>
+              <div class="match-team match-team--right">
+                <span class="match-team-name">Argentina</span>
+                <span class="match-flag">🇦🇷</span>
+              </div>
+            </div>
+            <div class="match-card__footer">
+              <span>🏟 MetLife Stadium, Nova York</span>
+              <button class="btn-watch">Assistir ao Vivo</button>
+            </div>
+          </div>
+
+          <!-- Jogo encerrado -->
+          <div class="match-card match-card--finished reveal-card">
+            <div class="match-card__header">
+              <span class="match-status match-status--finished">ENCERRADO</span>
+              <span class="match-group">Grupo D</span>
+            </div>
+            <div class="match-card__score">
+              <div class="match-team">
+                <span class="match-flag">🇫🇷</span>
+                <span class="match-team-name">França</span>
+              </div>
+              <div class="match-score-box">
+                <span class="score">1</span>
+                <span class="score-sep">:</span>
+                <span class="score">1</span>
+              </div>
+              <div class="match-team match-team--right">
+                <span class="match-team-name">Marrocos</span>
+                <span class="match-flag">🇲🇦</span>
+              </div>
+            </div>
+            <div class="match-card__footer">
+              <span>🏟 SoFi Stadium, Los Angeles</span>
+              <button class="btn-watch">Ver Resumo</button>
+            </div>
+          </div>
+
+          <!-- Próximo jogo -->
+          <div class="match-card match-card--upcoming reveal-card">
+            <div class="match-card__header">
+              <span class="match-status match-status--upcoming">AMANHÃ · 20:00</span>
+              <span class="match-group">Grupo A</span>
+            </div>
+            <div class="match-card__score">
+              <div class="match-team">
+                <span class="match-flag">🇩🇪</span>
+                <span class="match-team-name">Alemanha</span>
+              </div>
+              <div class="match-score-box match-score-box--upcoming">
+                <span>VS</span>
+              </div>
+              <div class="match-team match-team--right">
+                <span class="match-team-name">Espanha</span>
+                <span class="match-flag">🇪🇸</span>
+              </div>
+            </div>
+            <div class="match-card__footer">
+              <span>🏟 AT&amp;T Stadium, Dallas</span>
+              <button class="btn-watch">Lembrete</button>
+            </div>
+          </div>
+
+          <!-- Outro jogo -->
+          <div class="match-card match-card--upcoming reveal-card">
+            <div class="match-card__header">
+              <span class="match-status match-status--upcoming">18 JUN · 17:00</span>
+              <span class="match-group">Grupo D</span>
+            </div>
+            <div class="match-card__score">
+              <div class="match-team">
+                <span class="match-flag">🇧🇷</span>
+                <span class="match-team-name">Brasil</span>
+              </div>
+              <div class="match-score-box match-score-box--upcoming">
+                <span>VS</span>
+              </div>
+              <div class="match-team match-team--right">
+                <span class="match-team-name">França</span>
+                <span class="match-flag">🇫🇷</span>
+              </div>
+            </div>
+            <div class="match-card__footer">
+              <span>🏟 Rose Bowl, Los Angeles</span>
+              <button class="btn-watch">Lembrete</button>
+            </div>
+          </div>
+
+        </div><!-- /matches-grid -->
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION: CLASSIFICAÇÃO
+    ============================================================ -->
+    <section class="section" id="classificacao">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-kicker">Copa do Mundo FIFA 2026</span>
+            <h2 class="section-title">Tabela de Classificação</h2>
+          </div>
+          <div class="group-tabs" id="groupTabs">
+            <button class="group-tab active" data-group="D">Grupo D</button>
+            <button class="group-tab" data-group="A">Grupo A</button>
+            <button class="group-tab" data-group="B">Grupo B</button>
+            <button class="group-tab" data-group="C">Grupo C</button>
+          </div>
+        </div>
+
+        <div class="table-wrap reveal-card">
+          <table class="standings-table" id="standingsTable">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Seleção</th>
+                <th>J</th>
+                <th>V</th>
+                <th>E</th>
+                <th>D</th>
+                <th>GP</th>
+                <th>GC</th>
+                <th>SG</th>
+                <th>Pts</th>
+              </tr>
+            </thead>
+            <tbody id="standingsBody">
+              <!-- Injetado via JS -->
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION: ARTILHEIROS
+    ============================================================ -->
+    <section class="section section--dark" id="artilheiros">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-kicker">Copa do Mundo FIFA 2026</span>
+            <h2 class="section-title">Artilheiros</h2>
+          </div>
+          <a href="#" class="see-all-link">Ver todos →</a>
+        </div>
+
+        <div class="scorers-grid">
+          <div class="scorer-card scorer-card--gold reveal-card">
+            <div class="scorer-rank">🥇 1º</div>
+            <div class="scorer-avatar sa--neymar">10</div>
+            <div class="scorer-info">
+              <strong>Neymar Jr.</strong>
+              <span>🇧🇷 Brasil</span>
+            </div>
+            <div class="scorer-goals">
+              <span class="goals-num">5</span>
+              <span class="goals-label">gols</span>
+            </div>
+            <div class="scorer-bar"><div class="scorer-fill" style="width:100%"></div></div>
+          </div>
+          <div class="scorer-card scorer-card--silver reveal-card">
+            <div class="scorer-rank">🥈 2º</div>
+            <div class="scorer-avatar sa--mbappe">10</div>
+            <div class="scorer-info">
+              <strong>Mbappé</strong>
+              <span>🇫🇷 França</span>
+            </div>
+            <div class="scorer-goals">
+              <span class="goals-num">4</span>
+              <span class="goals-label">gols</span>
+            </div>
+            <div class="scorer-bar"><div class="scorer-fill" style="width:80%"></div></div>
+          </div>
+          <div class="scorer-card reveal-card">
+            <div class="scorer-rank">🥉 3º</div>
+            <div class="scorer-avatar sa--vini">7</div>
+            <div class="scorer-info">
+              <strong>Vinícius Jr.</strong>
+              <span>🇧🇷 Brasil</span>
+            </div>
+            <div class="scorer-goals">
+              <span class="goals-num">3</span>
+              <span class="goals-label">gols</span>
+            </div>
+            <div class="scorer-bar"><div class="scorer-fill" style="width:60%"></div></div>
+          </div>
+          <div class="scorer-card reveal-card">
+            <div class="scorer-rank">4º</div>
+            <div class="scorer-avatar sa--lamine">17</div>
+            <div class="scorer-info">
+              <strong>Lamine Yamal</strong>
+              <span>🇪🇸 Espanha</span>
+            </div>
+            <div class="scorer-goals">
+              <span class="goals-num">3</span>
+              <span class="goals-label">gols</span>
+            </div>
+            <div class="scorer-bar"><div class="scorer-fill" style="width:60%"></div></div>
+          </div>
+          <div class="scorer-card reveal-card">
+            <div class="scorer-rank">5º</div>
+            <div class="scorer-avatar sa--endrick">9</div>
+            <div class="scorer-info">
+              <strong>Endrick</strong>
+              <span>🇧🇷 Brasil</span>
+            </div>
+            <div class="scorer-goals">
+              <span class="goals-num">2</span>
+              <span class="goals-label">gols</span>
+            </div>
+            <div class="scorer-bar"><div class="scorer-fill" style="width:40%"></div></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION: SELEÇÕES
+    ============================================================ -->
+    <section class="section" id="selecoes">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-kicker">Copa do Mundo FIFA 2026</span>
+            <h2 class="section-title">Seleções Favoritas</h2>
+          </div>
+        </div>
+        <div class="teams-grid">
+          <div class="team-card team-card--brazil reveal-card">
+            <div class="team-card__flag">🇧🇷</div>
+            <h3>Brasil</h3>
+            <p>Grupo D</p>
+            <span class="team-odds">Favorito</span>
+          </div>
+          <div class="team-card reveal-card">
+            <div class="team-card__flag">🇦🇷</div>
+            <h3>Argentina</h3>
+            <p>Grupo D</p>
+            <span class="team-odds">+280</span>
+          </div>
+          <div class="team-card reveal-card">
+            <div class="team-card__flag">🇫🇷</div>
+            <h3>França</h3>
+            <p>Grupo D</p>
+            <span class="team-odds">+310</span>
+          </div>
+          <div class="team-card reveal-card">
+            <div class="team-card__flag">🇪🇸</div>
+            <h3>Espanha</h3>
+            <p>Grupo A</p>
+            <span class="team-odds">+350</span>
+          </div>
+          <div class="team-card reveal-card">
+            <div class="team-card__flag">🏴󠁧󠁢󠁥󠁮󠁧󠁿</div>
+            <h3>Inglaterra</h3>
+            <p>Grupo B</p>
+            <span class="team-odds">+400</span>
+          </div>
+          <div class="team-card reveal-card">
+            <div class="team-card__flag">🇩🇪</div>
+            <h3>Alemanha</h3>
+            <p>Grupo A</p>
+            <span class="team-odds">+450</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION: VÍDEOS
+    ============================================================ -->
+    <section class="section section--dark" id="videos">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-kicker">Conteúdo em Vídeo</span>
+            <h2 class="section-title">Vídeos em Destaque</h2>
+          </div>
+          <a href="#" class="see-all-link">Ver todos →</a>
+        </div>
+        <div class="videos-grid">
+          <div class="video-card video-card--featured reveal-card">
+            <div class="video-thumb vt--neymar">
+              <button class="play-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+              </button>
+              <span class="video-duration">4:32</span>
+            </div>
+            <div class="video-info">
+              <span class="video-cat cat--selecao">Seleção</span>
+              <h3>Neymar chega ao CT: primeiras imagens do retorno à Seleção Brasileira</h3>
+              <span class="video-time">Há 1 hora</span>
+            </div>
+          </div>
+          <div class="video-card reveal-card">
+            <div class="video-thumb vt--treino">
+              <button class="play-btn play-btn--sm">
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+              </button>
+              <span class="video-duration">2:18</span>
+            </div>
+            <div class="video-info">
+              <span class="video-cat cat--selecao">Treino</span>
+              <h3>Os melhores momentos do treino desta terça com Vinicius e Endrick</h3>
+              <span class="video-time">Há 3 horas</span>
+            </div>
+          </div>
+          <div class="video-card reveal-card">
+            <div class="video-thumb vt--analise">
+              <button class="play-btn play-btn--sm">
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+              </button>
+              <span class="video-duration">8:47</span>
+            </div>
+            <div class="video-info">
+              <span class="video-cat cat--tatica">Análise</span>
+              <h3>Análise tática: como o Brasil vai jogar com Neymar e Vinícius juntos</h3>
+              <span class="video-time">Há 5 horas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="container">
+        <div class="footer__grid">
+
+          <!-- Coluna 1: Logo + redes -->
+          <div class="footer__brand">
+            <a href="#" class="navbar__logo footer-logo">
+              <span class="logo-icon">&#9917;</span>
+              <span class="logo-text">Copa<strong>News</strong><em>Brasil</em></span>
+            </a>
+            <p>O maior portal de notícias sobre a Seleção Brasileira e a Copa do Mundo FIFA 2026.</p>
+            <div class="social-links">
+              <a href="#" class="social-btn" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="Twitter/X">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="YouTube">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-1.96C18.88 4 12 4 12 4s-6.88 0-8.6.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.08C5.12 19.54 12 19.54 12 19.54s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-1.95A29 29 0 0 0 23 11.75a29 29 0 0 0-.46-5.33z"/><polygon points="9.75,15.02 15.5,11.75 9.75,8.48 9.75,15.02" fill="currentColor"/></svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="TikTok">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.77 1.52V6.75a4.85 4.85 0 0 1-1-.06z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Coluna 2: Links rápidos -->
+          <div class="footer__links">
+            <h4>Navegação</h4>
+            <ul>
+              <li><a href="#noticias">Notícias</a></li>
+              <li><a href="#jogos">Jogos</a></li>
+              <li><a href="#classificacao">Classificação</a></li>
+              <li><a href="#artilheiros">Artilheiros</a></li>
+              <li><a href="#selecoes">Seleções</a></li>
+              <li><a href="#videos">Vídeos</a></li>
+            </ul>
+          </div>
+
+          <!-- Coluna 3: Copa 2026 -->
+          <div class="footer__links">
+            <h4>Copa 2026</h4>
+            <ul>
+              <li><a href="#">Sedes e Estádios</a></li>
+              <li><a href="#">Grupos</a></li>
+              <li><a href="#">Calendário</a></li>
+              <li><a href="#">Mascote</a></li>
+              <li><a href="#">Bola Oficial</a></li>
+              <li><a href="#">Ingressos</a></li>
+            </ul>
+          </div>
+
+          <!-- Coluna 4: Newsletter -->
+          <div class="footer__newsletter">
+            <h4>Newsletter</h4>
+            <p>Receba as principais notícias da Copa no seu e-mail.</p>
+            <div class="newsletter-form">
+              <input type="email" placeholder="seu@email.com" />
+              <button>Inscrever</button>
+            </div>
+            <p class="newsletter-note">Sem spam. Cancele quando quiser.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© 2026 Copa News Brasil. Todos os direitos reservados.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Política de Privacidade</a>
+          <a href="#">Termos de Uso</a>
+          <a href="#">Contato</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão voltar ao topo -->
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18,15 12,9 6,15"/></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
